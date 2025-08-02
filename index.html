@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>موقع بيع فيزات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>بيع فيزات</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/01/11/12/34/credit-card-1974730_960_720.jpg" alt="Visa 1" />
+        <h2>فيزا #1</h2>
+        <p>السعر: 250$</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2015/09/18/18/25/credit-card-944495_960_720.jpg" alt="Visa 2" />
+        <h2>فيزا #2</h2>
+        <p>السعر: 500$</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2014/12/15/17/16/credit-card-569349_960_720.jpg" alt="Visa 3" />
+        <h2>فيزا #3</h2>
+        <p>السعر: 700$</p>
+      </div>
+    </div>
+    <form id="form">
+      <label>البريد الإلكتروني:</label>
+      <input type="email" id="email" required />
+      <label>ارفع صورة الإثبات:</label>
+      <input type="file" id="image" accept="image/*" required />
+      <button type="submit">إرسال على تيليجرام</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("form");
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("تم إرسال البيانات بنجاح ✨\nسيتم إرسال الفيزا على بريدك خلال 48 ساعة.");
+    });
+  </script>
+</body>
+</html>
